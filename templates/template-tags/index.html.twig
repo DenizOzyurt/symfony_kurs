@@ -1,0 +1,103 @@
+{#biz extends komutuyla base.html.twig e eristik orada olan block tag lerine gore
+child twig de islemler yapilacak#}
+{% extends 'base.html.twig' %}
+
+{#base de body diye bir block var onu kullandik#}
+{% block body %}
+    <hr>
+Hello test block<br>
+
+{# 'include ' ile farkli bir twig file buraya inject ediyoruz#}
+    {% include "template-tags/include-me.html.twig" %}
+{% endblock %}
+
+{#base e name diye bir block olusturduk default olarak 'deniz yazdik
+burada hic bir sey yazmasaydik ekrana 'deniz cikacakti'#}
+{% block name%}<br>
+    <hr>
+    ibrahim
+{% endblock %}
+
+{#burda base de for_test diye bir block olusturduk 'for each '
+loop twig de nasil kullanillir ona baktik,
+bunun icin TemplatetagsController da shirler diye bir List olusturduk#}
+{% block for_test  %}<br>
+    <hr>
+    {% for sehir in sehirler %}
+        {{ sehir }}<br>
+    {% endfor %}
+{% endblock %}
+
+{#burada if satement lari inceledik once TemlateTags de if_test
+diye bir variable olusturduk#}
+{% block if_test %}<br>
+    <hr>
+    {% if ifVar %}
+        if test sonucu true -> if deneme
+        {% else %}
+       variable  false -> else deneme
+    {% endif %}
+    <br>
+
+{#  burada 'if defined ' baktik variable TemplateTags de var mi yok mu
+onu veriyor#}
+    {% if definedCheck is defined %}
+    definedCheck:defined
+    {% else %}
+    definedChen:Not defined
+    {% endif %}
+    <br>
+
+{#  'if empty' variable bos mu dolu mu onu veriyor  #}
+    {% if emptyCheck is empty %}
+        emptyCheck:empty
+    {% else %}
+        definedChen:Not empty
+    {% endif %}
+    <br>
+
+{#   'if null' variable null mi degil mi #}
+    {% if nullCheck is null %}
+        nullCheck:null
+    {% else %}
+        definedChen:Not null
+    {% endif %}
+    <br>
+
+{#  ''if even' number is even 'if odd' gives number is odd  #}
+    {% if num is even %}
+        evet even
+    {% else %}
+        hayir tek sayi
+    {% endif %}
+    <br>
+
+{#    'if --- is iterable' gives variable is array or not#}
+    {% if iterableCheck is iterable %}
+        iterableCheck is iterable
+    {% else %}
+        iterableCheck is not iterable
+    {% endif %}
+{% endblock %}
+
+{# 'set' le twig de variable tanimlayip a deger verebiliyoruz #}
+     {% block set_test %}
+      <hr>
+         {% set isim='zehra' %}
+         {{ isim }}
+         <hr>
+{# 'spaceless' normalde metin aralarinda olan bosluklari siler ama
+burada hatayi bulamadigimdan calistiramamadim #}
+{#         {% spaceless %}#}
+{#             <div>#}
+{#                 <h2>#}
+{#                     <b>zeliha eymen</b>#}
+{#                 </h2>#}
+{#             </div>#}
+{#         {% endspaceless %}#}
+     {% endblock %}
+
+
+
+
+

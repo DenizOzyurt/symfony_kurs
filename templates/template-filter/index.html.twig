@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+{#cikti almak icin {{ isim(variable adini yaziyorduk) } }
+    filter icinse {{ isim| }} ile yapiliyor} #}
+
+{#  abs (absolute value) filter i icin  #}
+{{ negetiveVar |abs}}
+<hr>
+
+{# Capitilize ilk harfi buyuk yapmaya yarar   #}
+{{ sentence|capitalize }}
+    <hr>
+
+{# yazilan tarihi string e donusturur aksi halde 'Object of class DateTime could not be converted to string' hatasini verir   #}
+    {{ date|date }} <br>
+{# farkli date formatlari yukarida olan default , degisik formatl   #}
+    {{ date|date('M D Y') }}
+    <hr>
+
+{#  first filter ilk elemani ekrana yazdirir  #}
+{{ sehirler|first }}
+    <hr>
+
+{#  join => implodu yapmaya yarar birlestireye yarar default=>direk yanyana yazdirir  #}
+    {{ sehirler|join(',') }}
+    <hr>
+
+{# her hangi bir arrayin keys lerini aldirir default=> indexleri dondurur  #}
+    {{ sehirler|keys|join(',') }}
+    <hr>
+
+{#  last filterida son elemani yazdirir  #}
+    {{ sehirler|last }}
+    <hr>
+
+{#   lenght filteri uzunlugu (eleman sayisini veriri) php deki karsiligi 'count' #}
+    {{ sehirler|length }}
+<hr>
+
+{#  lower karakterleri kucuk karakterlerre cevirir  #}
+{{ sentence2|lower }}
+<hr>
+{#  merge birlestirmeye yarar  #}
+{{ sehirler|merge(['izmir'])|join('--') }}
+<hr>
+
+{#  raw  =>controller icinden verilen bir html variable twig guvensiz olarak algilar, raw kullanirsak direk kabul eder   #}
+{{ rawData|raw }}
+<hr>
+
+    {#reverse function i tersine cevirmeye yarar#}
+    {{ sehirler|reverse|join('--') }}
+    <hr>
+{#   sort filter i natural order yapar #}
+    {{ sehirler|sort|join(',') }}
+<hr>
+
+{#  trim bas ve sonda olan boluklari silme isine yarar  #}
+    {{ sentence2 }} <br>
+{{ sentence2|trim }}
+<hr>
+
+{#  upper tum karakterleri uppercase haline cevirir  #}
+  {{ sentence|upper}}
+<hr>
+
+{# url_enconde http de slash den kacinip url_encode haline getirir slash lar yerine % isareti koyuyor   #}
+    {{'http://strasbourg.org/?name=ozyurt'|url_encode }}
+<hr>
+
+{#  json_encode json moduna cevirir  #}
+{{ ['ali','avcilar','mehmet','cekmece']|json_encode }} <br>
+    {{ sehirler|json_encode }}
+<hr>
+
+
+{% endblock %}
+
+
+
+
+
+
