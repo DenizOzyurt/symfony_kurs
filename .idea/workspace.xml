@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0f787db-bde2-4193-ba71-4ca7bad310fe" name="Default Changelist" comment="" />
+    <list default="true" id="e0f787db-bde2-4193-ba71-4ca7bad310fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/HelloCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/SymfonyStyleCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AssetController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/asset/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/dev/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/dev/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Twig/AppExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Twig/AppExtension.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +47,9 @@
         <option value="composer.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/Service/NameG.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
@@ -176,12 +209,24 @@
       <workItem from="1602816905018" duration="6257000" />
       <workItem from="1602835152365" duration="14597000" />
       <workItem from="1603080522081" duration="14948000" />
-      <workItem from="1603714685338" duration="21768000" />
+      <workItem from="1603714685338" duration="25630000" />
+      <workItem from="1603965947663" duration="13213000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="434" y="187" key="#Notifications" timestamp="1601396905941">
@@ -220,10 +265,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="222" key="scopes/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1601478863689" />
-    <state x="675" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602857006786">
+    <state x="675" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603868294255">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="675" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1602857006786" />
+    <state x="675" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1280.680@0.0.1366.728" timestamp="1603868294255" />
     <state x="675" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601396569761" />
   </component>
 </project>

@@ -15,7 +15,7 @@ class AppExtension extends AbstractExtension{
         ] ;
     }
 //      yukrida cagirilan functiona ne yapacagini tanimladik
-    //verilen filteri md% lenmis sekilde return yapsin dedik.
+    //verilen filteri md5 lenmis sekilde return yapsin dedik.
     public function md5Filter($string){
      return md5($string);
     }

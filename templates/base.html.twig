@@ -3,11 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+
+{#   css kodlarini title public in altinda olusturdugumuz main.css i link ettik         #}
+        <link href="{{ asset('css/main.css') }}" rel="stylesheet" />
+
+        {% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+{# onceden public in altinda olusturdugumuz js buraya ekledik#}
+        <script src="{{ asset('js/main.js') }}"></script>
+        {% endblock %}
 
         {% block name %}{% endblock %}
         {% block for_test %} {% endblock %}
